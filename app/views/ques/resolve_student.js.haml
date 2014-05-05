@@ -1,0 +1,5 @@
+console.log("#{@que.inspect}")
+$("li.student_#{ @que.id }").remove()
+$("div.resolved_students").append(
+"#{@que.name} helped at #{ @que.updated_at.strftime('%l:%M%p') }<br>"
+);

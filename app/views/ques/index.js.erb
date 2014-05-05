@@ -1,0 +1,4 @@
+$("ul.students").html("");
+<% @ques.each do |que| %>
+  $("ul.students").append("<%= escape_javascript(render(partial: 'ques/student', locals: { student: que})) %>");
+<% end %>

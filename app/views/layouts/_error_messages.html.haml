@@ -1,0 +1,12 @@
+- object.errors.messages.each do |k, v|
+  - v.each do |message|
+    = k.capitalize
+    = message
+    %br
+
+/ In HAML
+/ = is display
+/ - is ruby logic that you don't want displayed
+/ % is for HTMl tags
+/ %div.blue_background
+/ .blue_background

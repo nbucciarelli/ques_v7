@@ -1,0 +1,23 @@
+.in_progress {
+  color: orange;
+}
+
+.in_progress a {
+  color: orange; 
+}
+
+.in_progress a:visited {
+  color: orange;
+}
+
+.new {
+  color: green;
+}
+
+.gray_background {
+  background-color: rgb(233, 233, 233);
+}
+
+.blue_background {
+  background-color: rgb(33, 167, 255);
+}

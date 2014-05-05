@@ -1,0 +1,9 @@
+%h4 This is a person in que
+
+= @que.name
+got into que
+= @que.created_at.strftime("%l:%M%p")
+%br
+= image_tag @que.image.url
+%br
+= link_to "Home", root_path

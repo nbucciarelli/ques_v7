@@ -1,0 +1,13 @@
+%li{ class: "#{student.workflow_state} student student_#{student.id}"}
+  = student.name
+  (#{student.workflow_state})
+  = student.created_at.strftime("%l:%M%p")
+  = link_to "Show", que_path(student)
+  |
+  = link_to "Edit", edit_que_path(student)
+  |
+  = link_to "Delete", que_path(student), method: :delete
+  |
+  = display_links(student)
+  |
+  = link_to "Remove From List", "javascript:void(0);", class: "remove_student_from_list"

@@ -1,0 +1,12 @@
+= form_for @que, html: { multipart: true } do |f|
+  = render 'layouts/error_messages', object: @que
+  = f.label :name
+  = f.text_field :name, placeholder: "Name"
+  %br
+  = f.label :email
+  = f.text_field :email, placeholder: "Email"
+  %br
+  = f.file_field :image
+  %br
+    = f.submit
+= link_to "Home", root_path

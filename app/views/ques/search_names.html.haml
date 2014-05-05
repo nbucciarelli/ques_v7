@@ -1,0 +1,6 @@
+%h4 Search
+
+%ul
+  - @search_names.each do |search_name|
+    = render 'ques/student', student: search_name
+  

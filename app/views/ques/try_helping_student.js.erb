@@ -1,0 +1,5 @@
+console.log("<%= @que.inspect %>")
+$("li.student_" + "<%= @que.id %>").replaceWith(
+  "<%= escape_javascript(render(partial: 'ques/student', locals: { student: @que})) %>"
+)
+
