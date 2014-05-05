@@ -1,1 +1,1 @@
-rvm 2.1@que --create
+rvm 2.1@que_with_errors --create
