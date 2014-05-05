@@ -7,7 +7,7 @@ class Que < ActiveRecord::Base
   before_create :send_que_email
 
   def send_que_email
-    QueMailer.new_que_email(self).deliver
+    # QueMailer.new_que_email(self).deliver
   end
 
   # What this is saying:
